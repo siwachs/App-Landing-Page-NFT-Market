@@ -6,7 +6,10 @@ const Button = ({ assetUrl, link }) => {
   return (
     <div
       className={`${styles.btnBlack}`}
-      onClick={() => window.open(link, "_blank")}
+      onClick={(e) => {
+        e.preventDefault();
+        window.open(link, "_blank");
+      }}
     >
       <img alt="" src={assetUrl} className={`${styles.btnIcon}`}></img>
 

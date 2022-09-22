@@ -19,7 +19,10 @@ const Download = () => {
           className={`${styles.btnPrimary}`}
           onClick={(e) => {
             e.preventDefault();
-            window.location.href = "";
+            window.open(
+              "https://github.com/ssiwach8888/App-Landing-Page-NFT-Market-",
+              "_blank"
+            );
           }}
         >
           Source Code
